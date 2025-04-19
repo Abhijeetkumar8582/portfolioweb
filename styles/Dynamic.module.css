@@ -1,0 +1,186 @@
+.MainDiv_Header_One{
+    display: flex;
+    flex-direction: column;
+    background-color: #0B0F1C;
+    background: radial-gradient(circle at top right, #101628, #0B0F1C);
+    /* background-image: url('/Image/test.png') no-repeat center center; */
+    padding: 3rem 5rem;
+    /* padding: 20px; */
+    gap: 25px;
+    /* height: 100vh; */
+    /* background-color: #f0f0f0; */
+    /* border-radius: 10px; */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.MainDiv_Header_One_Div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.MainDiv_Header_One_Left {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Header_text_heading  {
+    /* font-size: 2.5rem; */
+    margin: 0;
+    color: #333;
+}
+
+.Header_text_subheading  {
+    /* font-size: 1.8rem; */
+    font-weight: 800;
+    margin-top: 2rem;
+    margin: 0;
+    color: #666;
+}
+.Header_text_heading_text{
+    font-size: 1.8rem;
+    background: linear-gradient(to right, #ffffff, #f3cad0);
+    -webkit-background-clip: text;
+    font-weight: 800;
+    background-clip: text;
+    color: transparent;
+    /* font-weight: bold; */
+}
+.Header_text_subheading_text{
+    font-size: 2.8rem;
+    
+    background: linear-gradient(to right, #9828e7, #e06073);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+.MainDiv_Header_Two {
+    margin-top: -50px;
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    /* gap: 30px; */
+}
+
+.MainDiv_Header_Two_Right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    gap: 15px;
+}
+
+.Header_text_subheading_button{
+    display: flex;
+    gap: 20px;
+}
+.Header_button_one{
+    padding: 12px 24px;
+    background: linear-gradient(to right, #176e8b, #010175);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* font-weight: bold; */
+    transition: all 0.3s ease;
+}
+
+.Header_button_one:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 191, 255, 0.3);
+}
+
+.input {
+    color: white;
+    border: 2px solid #8707ff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    max-width: 400px;
+    width: 100%;
+    transition: all 0.3s ease;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    height: auto;
+    /* min-height: 40px; */
+    resize: vertical;
+}
+  
+.input:active {
+    box-shadow: 2px 2px 15px #8707ff inset;
+}
+.Dynamic_Card_Jarvis_div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+.Dynamic_Card{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    gap: 20px;
+    /* height: 50%; */
+    color: white;
+    background-color: #0B0F1C;
+    background: radial-gradient(circle at top right, #101628, #0B0F1C);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.Jarvis_Div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    color: white;
+    /* background-color: #0B0F1C; */
+    background: radial-gradient(circle at top right, #101628, #0B0F1C);
+    padding: 20px;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); */
+}
+
+.Dynamic_Card_one {
+    background: linear-gradient(145deg, #0c1120, #0f1628);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(152, 40, 231, 0.2);
+    transition: all 0.3s ease;
+}
+
+.Dynamic_Card_one:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(152, 40, 231, 0.3);
+}
+
+.Dynamic_Card_one h3 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #9828e7, #e06073);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.Dynamic_Card_one p {
+    color: #ccc;
+    margin-bottom: 0;
+}
+
+.card {
+    width: 190px;
+    height: 254px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px 30px #ffffff;
+  }

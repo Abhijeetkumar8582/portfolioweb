@@ -1,0 +1,34 @@
+[
+    {
+       "skills":"React",
+       "logo":"https://img.icons8.com/plasticine/512/react.png"
+    },
+    {
+       "skills":"Javascript",
+       "logo":"https://img.icons8.com/fluency/512/javascript.png"
+    },
+    {
+       "skills":"HTML",
+       "logo":"https://img.icons8.com/external-flaticons-lineal-color-flat-icons/512/external-html-web-development-flaticons-lineal-color-flat-icons-2.png"
+    },
+    {
+       "skills":"CSS",
+       "logo":"https://img.icons8.com/fluency/512/css3.png"
+    },
+    {
+       "skills":"Mongo DB",
+       "logo":"https://img.icons8.com/color/512/mongodb.png"
+    },
+    {
+       "skills":"SQL",
+       "logo":"https://img.icons8.com/external-flaticons-lineal-color-flat-icons/512/external-sql-web-hosting-flaticons-lineal-color-flat-icons.png"
+    },
+    {
+       "skills":"NodeJs",
+       "logo":"https://img.icons8.com/fluency/512/node-js.png"
+    },
+    {
+       "skills":"NextJs",
+       "logo":"https://img.icons8.com/color/512/nextjs.png"
+    }
+ ]

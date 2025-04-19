@@ -1,0 +1,984 @@
+.FlipfolioHubBox {
+  width: 100vw;
+  margin: 60px;
+  display: flex;
+  background: #fff;
+  border: 5px solid rgba(0, 0, 0, 0.07);
+  transition: all 0.5s ease 0;
+  transition: all 0.5s ease 0s;
+  box-shadow: 0 10px 10px 0 #5147dd;
+}
+
+.FlipfolioHubBox_one {
+  width: 50%;
+  padding: 30px;
+  background-color: white;
+}
+
+.FlipfolioHubBox_two {
+  width: 50%;
+  background-color: #0a0aff;
+}
+
+.flipkarText {
+  margin: 30px 0px;
+}
+
+.ratingDiv {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.ImageSection{
+  max-width: 100%;
+  /* object-fit: contain; */
+}
+.Main_ImageSection{
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+.Available_offers_div {
+  margin: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.Available_offers_div_img {
+  max-width: 20px;
+  margin-left: 5px;
+}
+
+.Skills_sub_div {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.ImageLogo_div {
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+}
+
+.intro_images {
+  height: 50%;
+  width: 50%;
+}
+
+.givenName {
+  margin-bottom: 50px;
+}
+
+.custombtn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: Lato, sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* 2 */
+.btn2 {
+  background: rgb(240, 140, 9);
+  background: linear-gradient(
+    0deg,
+    rgb(250, 161, 28) 0%,
+    rgb(247, 140, 52) 100%
+  );
+  border: none;
+  margin-bottom: 30px;
+}
+
+.btn2:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn2:hover {
+  box-shadow: 2px 2px 3px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(155, 163, 173, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+.userConcern {
+  margin: 0px 5px 0px 0px;
+}
+
+.FlipfolioHubBox_two_image {
+  width: 100%;
+  max-width: 400px;
+}
+
+.FlipfolioHubBox_two_Div_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.textInputDIv {
+  margin: 0px 0px 15px;
+  max-width: 400px;
+}
+
+.forgetNameBTn {
+  background-color: white;
+  border: none;
+}
+
+.forgetNameBTn:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .FlipfolioHubBox {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .FlipfolioHubBox_one {
+    width: 100%;
+    order: 1;
+  }
+
+  .FlipfolioHubBox_two {
+    width: 100%;
+    order: 0;
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  width: 5rem;
+}
+
+.avatar__image {
+  border-radius: 50%;
+  height: 50%;
+  width: 50%;
+}
+
+.generateAnotherOne {
+  width: 140px;
+  height: 45px;
+  font-family: Roboto, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #96b4ff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.generateAnotherOne:hover {
+  background-color: #82b8fe;
+  box-shadow: 0px 15px 20px rgba(46, 153, 229, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.generateAnotherOne:focus {
+  outline: none;
+}
+
+/* 12 */
+.btn12 {
+  position: relative;
+  margin: 0px 10px;
+  right: 40px;
+  bottom: 20px;
+  border: none;
+  box-shadow: none;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+
+.btn12:focus {
+  outline: none;
+}
+
+.btn12 span {
+  background: rgb(0, 172, 238);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 172, 238, 1) 0%,
+    rgba(2, 126, 251, 1) 100%
+  );
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn12 span:nth-child(1) {
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+
+.btn12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+
+.btn12:hover span:nth-child(1) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+
+.btn12:hover span:nth-child(2) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+.SubNavbar {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.07);
+  transition: all 0.5s ease 0s;
+  box-shadow: 0 5px 5 0 #5147dd;
+  justify-content: space-evenly;
+}
+
+.subNavbarText {
+  font-family: monospace;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.FlipfolioHubMainBox {
+  display: flex;
+  padding: 15px;
+  background-color: white;
+  max-height: 700px;
+  /* position: relative; */
+}
+
+.FlipfolioHubMainBox_Image {
+  width: 40%;
+  display: flex;
+  padding: 15px;
+}
+
+.FlipfolioHubMainBox_Content {
+  width: 60%;
+  padding: 15px;
+  flex-direction: column;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.FlipfolioHubMainboxImage_subimage {
+  width: 20%;
+  padding: 10px;
+  position: sticky;
+  /* margin-bottom: 10px; */
+}
+
+.FlipfolioHubMainboxImage_Mainimage {
+  width: 80%;
+  object-fit: contain;
+  margin-top: 40px;
+}
+
+.FlipfolioHubMainboxImage_subimage_Box {
+  width: 100%;
+  padding: 10px;
+  min-width: 50px;
+  margin-bottom: 10px;
+}
+
+.ratingItem {
+  border-radius: 6px;
+  margin: 0px 10px 0px 0px;
+  background-color: #26a541;
+  padding: 2px;
+  color: white;
+  font-size: smaller;
+}
+
+.pincodeInput {
+  padding: 0 0 6px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 2px solid #2874f0;
+  font-weight: 500;
+  align-items: center;
+  display: inline-block;
+  line-height: 25px;
+  outline: none;
+  box-shadow: none;
+  width: 160px;
+}
+
+.pincodeCheckText {
+  font-size: 15px;
+}
+
+.letsTalkBtn {
+  padding: 18px 8px;
+  font-weight: 400;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  width: 98%;
+  border: none;
+  float: left;
+  background: #ffbe46;
+  max-width: 250px;
+  color: black;
+}
+.OnAnotherQuestionAsk {
+  display: none;
+  padding: 18px 8px;
+  font-weight: 400;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  width: 98%;
+  border: none;
+  float: left;
+  background: #ffbe46;
+  color: black;
+}
+
+.aboutmeText {
+  font-size: 24px;
+  font-family: monospace;
+  font-weight: 500;
+}
+
+.experienceJsonmaindiv {
+  /* align-items: center; */
+  display: flex;
+}
+
+.experienceJsondiv {
+  width: 90%;
+  margin-bottom: 10px;
+  border-bottom: 2px solid gray;
+}
+
+.showdivBtn {
+  border: none;
+  background-color: white;
+}
+
+.showdivBtn:focus {
+  outline: none;
+}
+
+.divboxHeading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  padding: 20px 0px;
+}
+
+.projectDiv {
+  background: rgb(255, 255, 255);
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1900px;
+}
+
+.projectDivItem {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  padding: 10px;
+  margin: 0px 5px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  flex-shrink: 0;
+  /* Add this line to prevent shrinking */
+}
+
+.projectDivItemcontent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.LicensesmainDivitemcontent {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 10px;
+}
+
+.viewProjectBtn {
+  padding: 8px 16px;
+  font-size: 14px;
+  text-transform: capitalize;
+  box-shadow: none;
+  background: #2874f0;
+  color: rgb(255, 255, 255);
+  font-size: medium;
+  font-weight: 500;
+  border: none;
+  max-width: 200px;
+}
+
+.projectdivtext {
+  margin-bottom: 10px;
+}
+
+.AchievementsMainDiv {
+  background: rgb(255, 255, 255);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.AchievementsdivText {
+  margin-bottom: 10px;
+}
+
+.headingtext {
+  font-family: monospace;
+}
+
+.LicensesmainDiv {
+  background: rgb(255, 255, 255);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.Licensesmaindiv_map {
+  display: flex;
+  flex-direction: row;
+}
+.Licensesmaindiv_map_Main_div {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+}
+.LicensesmainDivitem {
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  padding: 10px;
+  margin: 0px 5px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  flex-shrink: 0;
+}
+
+.Contentjustify {
+  text-align: justify;
+}
+
+.experienceJsonImageDiv {
+  width: 10%;
+  display: flex;
+  padding: 0px 20px 0px 0px;
+  align-items: center;
+}
+.Skills_sub_Main_div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.prevbutton {
+  background-color: white;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  border: none;
+  color: rgb(1, 1, 1);
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+}
+.FlipfolioHub_Content_Skills_div_container {
+  display: flex;
+}
+.FlipfolioHub_Content_Skills_div_arrow_left {
+  width: 5%;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+.FlipfolioHub_Content_Skills_div_Main {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 100%;
+  overflow-x: scroll;
+  transition: transform 0.3s ease-in-out;
+}
+@media only screen and (max-width: 1150px) {
+  .FlipfolioHub_Content_Skills_div_Main {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    width: 90%;
+    overflow-x: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  .Licensesmaindiv_map_Main_div {
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    overflow-x: scroll;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .OnAnotherQuestionAsk {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .subNavbarText {
+    font-size: 12px;
+  }
+
+  .FlipfolioHubMainBox {
+    flex-direction: column;
+    max-height: 100%;
+  }
+
+  .FlipfolioHubMainBox_Image {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .FlipfolioHubMainBox_Content {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .Contentjustify {
+    font-size: 12px;
+  }
+
+  .FlipfolioHubMainboxImage_subimage {
+    order: 1;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+  }
+
+  .FlipfolioHubMainboxImage_Mainimage {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .Contentjustify {
+    text-align: justify;
+  }
+
+  .experienceJsonImageDiv {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .experienceJsondiv {
+    padding: 10px;
+  }
+  .projectDivItem {
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    margin: 0px 5px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    flex-shrink: 0;
+  }
+  .viewProjectBtn {
+    padding: 8px 6px;
+    font-size: 13px;
+    text-transform: capitalize;
+    box-shadow: none;
+    background: #2874f0;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    font-weight: 300;
+    border: none;
+    max-width: 145px;
+  }
+  .Skills_sub_Main_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .LicensesmainDivitem {
+    width: 270px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+    margin: 0px 5px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    flex-shrink: 0;
+  }
+  .FlipfolioHub_Content_Skills_div_Main {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    width: 100%;
+    overflow-x: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+.FlipfolioHubMainboxImage_subimage_Box:hover {
+  border-color: #0a0aff;
+  border: 3px solid #0a0aff;
+  padding: 10px;
+}
+
+.pincodebtn {
+  background: white;
+  border: none;
+  border-bottom: 2px solid #2874f0;
+}
+
+.fafaicongithub {
+  margin: 0px 50px;
+  display: flex;
+  color: white;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.fafaiconinstagram {
+  margin: 0px 50px;
+  display: flex;
+  color: white;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.fafaiconemail {
+  margin: 0px 50px;
+  display: flex;
+  color: white;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.fafaiconLinkedin {
+  margin: 0px 50px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.fafaicongithub:hover {
+  color: rgb(67, 98, 255);
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.fafaiconinstagram:hover {
+  color: rgb(255, 158, 67);
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.fafaiconemail:hover {
+  color: rgb(255, 67, 67);
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.fafaiconLinkedin:hover {
+  color: blue;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.FooterBar_container {
+  display: flex;
+}
+.FooterBar_container_sectionOne_div_one {
+  width: 40%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.FooterBar_container_sectionOne_div_two {
+  width: 60%;
+  display: flex;
+  margin: 10px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.footer_font_text {
+  color: #ffffff;
+  font-family: monospace;
+  font-size: 18px;
+  margin: 0px 10px;
+  text-decoration: none;
+}
+.FooterBar_container_two {
+  background-color: #000000;
+  color: #000;
+  width: 100vw;
+  padding: 5px 0px;
+  display: flex;
+  justify-content: center;
+}
+.footer_font_text_other_text {
+  color: #aaaaaa;
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 200;
+  margin: 0px;
+  text-decoration: none;
+}
+.redirect_btn {
+  background-color: transparent;
+  border: none;
+}
+.redirect_btn:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .NetfixAboutMain_div {
+    flex-direction: column;
+  }
+
+  .NetfixAboutMain_divOne {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .NetfixAboutMain_divTwo {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .educationNetflix {
+    display: flex;
+    padding: 1rem 1rem;
+    margin: 1rem 6px;
+  }
+
+  .netflixExpirenceDiv_Card_three_text {
+    font-size: 14px;
+  }
+
+  .netflixExpirenceDiv_Card_three {
+    width: 60%;
+  }
+
+  .netflixExpirenceDiv_Card_three_Desc {
+    font-size: 13px;
+  }
+
+  .netflixExpirenceDiv_Card_Image {
+    max-width: 20px;
+  }
+
+  .netflixExpirenceDiv_Card_three_timelline {
+    font-size: 10px;
+  }
+
+  .ProjectMain_div {
+    gap: 20px;
+  }
+
+  .AboutmeLicensesMainDiv {
+    gap: 20px;
+  }
+
+  .Reward_div {
+    flex-direction: column;
+    margin: 2rem;
+  }
+
+  .Reward_div_title {
+    width: 100%;
+  }
+
+  .Reward_div_para {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .NextflixMainHeading_div {
+    margin: 2rem 2rem;
+  }
+
+  .mobileText {
+    font-size: 14px;
+    font-weight: 200;
+  }
+  .mobileText_content {
+    font-size: 12px;
+  }
+
+  .heading_netflix_tag {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .footer_font_text,
+  .footer_font_text_other_text {
+    font-size: 13px;
+    text-align: center;
+  }
+  .FooterBar_container {
+    flex-direction: column;
+  }
+  .FooterBar_container_sectionOne_div_two {
+    gap: 5px;
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .FooterBar_container_sectionOne_div_one {
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.LetsChatMain_Div {
+  display: flex;
+  padding: 0 0;
+  min-height: 450px;
+  max-width: 900px;
+}
+.LetsChatMain_Div_image {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2874f0;
+}
+.LetsChatMain_Div_content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.button_FlipfolioHub_chat {
+  background: #fb641b;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  color: #fff;
+  min-width: 350px;
+  padding: 8px;
+  margin-top: 30px;
+}
+.button_FlipfolioHub_chat:focus,
+.letsTalkBtn:focus {
+  outline: none;
+}
+.LetsChatMain_image,
+.inputBox {
+  width: 100%;
+}
+.mobileText_content {
+  font-weight: 500;
+}
+@media only screen and (max-width: 750px) {
+  .LetsChatMain_Div {
+    flex-direction: column;
+  }
+  .LetsChatMain_Div_image {
+    width: 100%;
+  }
+  .LetsChatMain_Div_content {
+    width: 100%;
+  }
+  .LetsChatMain_image {
+    width: 50%;
+  }
+  .button_FlipfolioHub_chat {
+    min-width: 100%;
+  }
+  .letsTalkBtn,
+  .OnAnotherQuestionAsk {
+    padding: 10px 8px;
+  }
+}

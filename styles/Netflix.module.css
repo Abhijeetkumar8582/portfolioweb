@@ -1,0 +1,759 @@
+.MainDiv {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.MainPageSectionOne {
+  position: relative;
+  max-height: 900px;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.6) 0,
+      rgba(0, 0, 0, 0.4) 60%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url(../public/Image/GridImageNetFlix.webp);
+  background-size: contain;
+  height: 100%;
+}
+
+.NavbarHeadMain {
+  display: flex;
+  color: red;
+  justify-content: space-around;
+}
+
+.AbhiFlexText {
+  font-size: 3rem;
+  font-weight: 500;
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  font-family: monospace;
+}
+
+.siginBtn {
+  max-width: 106px;
+  max-height: 35px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px 10px;
+  padding: 10px;
+  background: red;
+  display: flex;
+  color: white;
+  font-weight: 500;
+  align-items: center;
+}
+
+.siginBtn:focus {
+  outline: none;
+}
+
+.selectLanguage {
+  text-transform: none;
+  max-width: 150px;
+  max-height: 35px;
+  background-color: transparent;
+  padding: 6px 35px;
+  color: rgb(255, 255, 255);
+  margin: 10px 100px;
+  border-radius: 5px;
+}
+
+.MainHeadingDiv {
+  display: flex;
+  flex-direction: column;
+  max-height: 700px;
+  margin: 203px 0px 50px;
+  justify-content: center;
+}
+
+.HeadingMainPage {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  padding: 0px 51px;
+  text-align: center;
+}
+
+.subHeadingMainPageOne {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.subHeadingMainPageTwo {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  /* margin-bottom: 200px; */
+}
+
+.emailIDEnteredbtn {
+  flex: 0 0 auto;
+  margin-top: 0;
+  margin-left: 0.5rem;
+  border: none;
+  padding: 0px 50px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.MainPageSectionTwo {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  padding: 4.5rem;
+}
+
+.MainPageSectionTwo_subdivOne {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainPageSectionTwo_subdivtwo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainPageSectionTwo_subdivOne_headingOne {
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.MainPageSectionTwo_subdivOne_headingtwo {
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.MainPageSectionThree {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  padding: 4.5rem;
+}
+
+.MainPageSectionThree_subdivone {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainPageSectionThree_subdivOne {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainPageSectionThree_subdivOne_headingOne {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.MainPageSectionThree_subdivOne_headingtwo {
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.HeadingMainPageInputDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.HeadingMainPageInputSubDiv {
+  margin: 0px 10px 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.HeadingMainPageInputSubDivEmail {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 15px 70px 15px 10px;
+}
+
+.MainPageSectionFour {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 4.5rem;
+}
+
+.accordainSubDiv_title {
+  background: #2d2d2d;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.accordainSubDiv {
+  color: white;
+  /* border: 2px solid white; */
+  background-color: #4c4c4c;
+  max-height: 75rem;
+  padding: 1.5rem;
+}
+
+.accordainSubDiv_title:hover {
+  background-color: rgb(74, 74, 74);
+}
+
+.MainPageSectionFive {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  color: white;
+  background-color: black;
+  padding: 1rem;
+}
+
+.headingTag {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.educationNetflix {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  border-bottom: 2px solid white;
+  margin: 1rem 4rem;
+}
+
+.project_div_description {
+  font-size: 15px;
+  font-weight: 200;
+  font-family: ui-monospace;
+  color: #d8d8d8;
+}
+
+.RewardBox {
+  background-color: black;
+  display: flex;
+}
+
+.rewards_text_div {
+  margin: 1rem 4rem;
+  /* padding: 1rem 4rem; */
+}
+
+.hackathontext {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.FAQ_text {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 750px) {
+  .AbhiFlexText {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: monospace;
+  }
+
+  .MainPageSectionOne {
+    max-height: 600px;
+  }
+
+  .selectLanguage {
+    padding: 0px 3px;
+  }
+
+  .selectLanguage {
+    margin: 10px 10px;
+  }
+
+  .HeadingMainPage {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    padding: 0px 20px;
+  }
+
+  .MainPageSectionTwo_subdivOne_headingOne {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .MainPageSectionThree_subdivOne_headingtwo {
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
+  }
+
+  .headingTag {
+    font-size: 15px;
+    font-weight: 200px;
+  }
+
+  .MainPageSectionTwo_subdivOne_headingtwo {
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
+  }
+
+  .subHeadingMainPageOne {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .subHeadingMainPageTwo {
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: white;
+    padding: 0px 20px;
+    text-align: center;
+  }
+
+  .MainHeadingDiv {
+    margin: 153px 0px 50px;
+  }
+
+  .MainPageSectionTwo {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .MainPageSectionTwo_subdivOne {
+    width: 100%;
+  }
+
+  .MainPageSectionTwo_subdivtwo {
+    width: 100%;
+  }
+
+  .MainPageSectionThree {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .MainPageSectionThree_subdivone {
+    width: 100%;
+    order: 1;
+  }
+
+  .MainPageSectionThree_subdivOne {
+    width: 100%;
+    order: 0;
+  }
+
+  .MainPageSectionThree_subdivOne_headingOne {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .HeadingMainPageInputDiv {
+    flex-direction: column;
+  }
+
+  .emailIDEnteredbtn {
+    flex: 0 0 auto;
+    margin-top: 0;
+
+    margin-left: 0.5rem;
+    border: none;
+    padding: 10px 30px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    max-width: 150px;
+    font-weight: 600;
+  }
+
+  .HeadingMainPageInputSubDiv {
+    display: flex;
+    justify-content: center;
+  }
+
+  .MainPageSectionFour {
+    padding: 1rem;
+  }
+
+  .HeadingMainPageInputSubDivEmail {
+    padding: 5px 50px 5px 10px;
+  }
+
+  .project_div_description {
+    font-size: 12px;
+    font-weight: 200;
+  }
+
+  .FAQ_text {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .accordainSubDiv_title_text {
+    font-size: 14px;
+  }
+
+  .accordainSubDiv_content_text {
+    font-size: 14px;
+    font-weight: 200;
+  }
+}
+
+/* --------------------------------------------------- */
+
+.NetfixVideoDiv_video {
+  width: 100%;
+  max-height: 500px;
+}
+
+.NetfixAboutMain_div {
+  display: flex;
+}
+
+.NetfixAboutMain_divOne {
+  width: 50%;
+  padding: 1rem 4rem;
+}
+
+.NetfixAboutMain_divOne_innerDiv {
+  display: flex;
+  gap: 10px;
+}
+
+.NetfixAboutMain_divTwo {
+  width: 50%;
+  padding: 1rem 4rem;
+}
+
+.ExperiencetitleDiv {
+  display: flex;
+  margin: 3px 2rem;
+  justify-content: flex-start;
+  border-bottom: 2px solid white;
+}
+
+.netflixExpirenceDiv_Card_one {
+  width: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.netflixExpirenceDiv_Card_three {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.netflixExpirenceDiv_Card_four {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.NextflixMainHeading_div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 3rem 2rem;
+}
+
+.ProjectMain_div {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.ProjectMain_div_card {
+  max-width: 300px;
+  background: #444444;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.ProjectMain_div_card_image_div {
+  margin-bottom: 10px;
+}
+
+.ProjectMain_div_card_fafaIcon {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 1rem 10px;
+}
+
+.ProjectMain_div_card_title {
+  padding: 0rem 1rem;
+}
+
+.ProjectMain_div_card_desc_div {
+  padding: 0rem 1rem;
+  margin-bottom: 20px;
+}
+
+.AboutmeLicensesMainDiv {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.AboutmeLicensesMainDiv_card {
+  max-width: 300px;
+  background: #444444;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.AboutmeLicensesMainDiv_card_imageIcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 1rem 10px;
+}
+
+.AboutmeLicensesMainDiv_card_title {
+  padding: 0rem 1rem;
+}
+
+.AboutmeLicensesMainDiv_card_title_text {
+  font-size: 15px;
+}
+
+.AboutmeLicensesMainDiv_card_Desc {
+  padding: 0rem 1rem;
+  margin-bottom: 20px;
+}
+
+.Reward_div {
+  display: flex;
+  margin: 2rem;
+}
+
+.Reward_div_title {
+  width: 15%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.Reward_div_para {
+  width: 85%;
+}
+
+.netflixExpirenceDiv_Card_Image {
+  max-width: 40px;
+}
+
+.skilltext {
+  margin: 0px 10px;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.netflixExpirenceDiv_Card_three_Desc {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.autoplayText {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.skills_div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.FooterBar_container {
+    display: flex;
+  }
+  .FooterBar_container_sectionOne_div_one {
+    width: 40%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .FooterBar_container_sectionOne_div_two {
+    width: 60%;
+    display: flex;
+    margin: 10px;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .footer_font_text {
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 18px;
+    margin: 0px 10px;
+    text-decoration: none;
+  }
+  .FooterBar_container_two {
+    background-color: #000000;
+    color: #000;
+    width: 100%;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer_font_text_other_text {
+    color: #aaaaaa;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: 200;
+    margin: 0px;
+    text-decoration: none;
+  }
+  .redirect_btn {
+    background-color: transparent;
+    border: none;
+  }
+  .redirect_btn:focus{
+    outline: none;
+  }
+  
+
+@media only screen and (max-width: 750px) {
+  .NetfixAboutMain_div {
+    flex-direction: column;
+  }
+
+  .NetfixAboutMain_divOne {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .NetfixAboutMain_divTwo {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .educationNetflix {
+    display: flex;
+    padding: 1rem 1rem;
+    margin: 1rem 6px;
+  }
+
+  .netflixExpirenceDiv_Card_three_text {
+    font-size: 14px;
+  }
+
+  .netflixExpirenceDiv_Card_three {
+    width: 60%;
+  }
+
+  .netflixExpirenceDiv_Card_three_Desc {
+    font-size: 13px;
+  }
+
+  .netflixExpirenceDiv_Card_Image {
+    max-width: 20px;
+  }
+
+  .netflixExpirenceDiv_Card_three_timelline {
+    font-size: 10px;
+  }
+
+  .ProjectMain_div {
+    gap: 20px;
+  }
+
+  .AboutmeLicensesMainDiv {
+    gap: 20px;
+  }
+
+  .Reward_div {
+    flex-direction: column;
+    margin: 2rem;
+  }
+
+  .Reward_div_title {
+    width: 100%;
+  }
+
+  .Reward_div_para {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .NextflixMainHeading_div {
+    margin: 2rem 2rem;
+  }
+
+  .mobileText {
+    font-size: 14px;
+    font-weight: 200;
+  }
+
+  .heading_netflix_tag {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .footer_font_text,
+  .footer_font_text_other_text {
+    font-size: 13px;
+    text-align: center;
+
+  }
+  .FooterBar_container {
+    flex-direction: column;
+  }
+  .FooterBar_container_sectionOne_div_two {
+    gap: 5px;
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .FooterBar_container_sectionOne_div_one {
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+  }
+}
+

@@ -1,0 +1,232 @@
+.introPageMainDiv {
+  display: flex;
+  background: whitesmoke;
+  max-height: 500px;
+  /* background: linear-gradient(90deg, #d3bdff, #ffd9c1); */
+}
+
+.introPageMainDiv_one {
+  width: 50%;
+  display: flex;
+  padding: 8rem 4rem;
+  flex-direction: column;
+}
+
+.introPageMainDiv_two {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.text {
+  font-size: 3.5rem;
+  font-family: monospace;
+}
+
+.text_name {
+  font-size: 3.5rem;
+  font-family: monospace;
+  color: #ff8900;
+  font-weight: 500;
+}
+
+.Portfoliotext {
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.Portfolio_Div {
+  padding: 2rem 4rem;
+  background-color: #f0f8ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.Container_two_subdiv {
+  justify-content: center;
+  display: flex;
+  min-height: 350px;
+  background: oldlace;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px;
+  flex-direction: column;
+  max-width: 350px;
+  /* margin: 4rem; */
+}
+
+.Container_two_subdiv_imageDiv {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 82px;
+  color: black;
+}
+
+.Container_two_subdiv_imageDiv_image {
+  width: 100%;
+  max-width: 250px;
+  object-fit: cover;
+  left: 50%;
+  top: 35%;
+  border-radius: 20px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.Container_two_subdiv_heading {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+.Container_two_subdiv_paragraph {
+  padding: 0rem 1rem;
+  margin: 20px;
+  color: black;
+}
+.LinkWithoutUnderline {
+  text-decoration: none;
+}
+.Portfoliotext_text {
+  font-size: 1.5rem;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.signature {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 10px;
+}
+.footer_button {
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+.footer_button:active,
+.footer_button:focus {
+  outline: none;
+}
+.LetsChatMain_Div {
+  padding: 2rem;
+  display: flex;
+  max-height: 400px;
+  max-width: 950px;
+}
+.LetsChatMain_Div_image {
+  width: 50%;
+}
+.LetsChatMain_Div_content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LetsChatMain_image {
+  width: 100%;
+}
+.feedbackButton {
+  background: royalblue;
+  border: none;
+  border-radius: 5px;
+  margin-top: 24px;
+  color: aliceblue;
+  width: 130px;
+  font-family: initial;
+  padding: 5px;
+}
+.feedbackField {
+  margin-top: 10px;
+}
+
+.field_text{
+  width: 270px;
+}
+@media only screen and (max-width: 750px) {
+  .introPageMainDiv {
+    flex-direction: column;
+    margin-bottom: 150px;
+  }
+  .introPageMainDiv_one {
+    width: 100%;
+    display: flex;
+    padding: 1rem 2rem;
+    order: 1;
+    flex-direction: column;
+  }
+  .introPageMainDiv_two {
+    width: 100%;
+    order: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text {
+    font-size: 2.5rem;
+    font-family: monospace;
+  }
+  .donut_3d_shape {
+    display: none;
+  }
+  .text_name {
+    font-size: 2.5rem;
+    font-family: monospace;
+    color: #ff8900;
+    font-weight: 500;
+  }
+  .Portfolio_Div {
+    padding: 1rem 2rem;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+  .LetsChatMain_Div {
+    flex-direction: column;
+    max-height: 700px;
+    padding: 1rem;
+  }
+  .LetsChatMain_Div_image,
+  .inputBox {
+    width: 100%;
+  }
+  .LetsChatMain_Div_content {
+    width: 100%;
+    /* padding: 2rem; */
+  }
+  .mobile_text,
+  .aboutmeText,
+  .footer_button {
+    font-size: 15px;
+  }
+  .signature {
+    font-size: 12px;
+  }
+  .feedbackField {
+    padding: 5px 10px;
+  }
+  .aboutmeText_div {
+    display: flex;
+    justify-content: center;
+  }
+  .field_text{
+    width: 100%;
+  }
+}

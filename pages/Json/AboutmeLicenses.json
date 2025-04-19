@@ -1,0 +1,61 @@
+[
+
+   {
+      "tittle":"Microsoft Certified: Azure AI Fundamentals",
+      "description":"I learned about the Azure platform, fine-tuning, and the Microsoft Bot Framework with Azure NLP to build an AI application.",
+      "logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png",
+      "certificate":"/Image/Microsoft.webp"
+      
+   },
+
+    {
+       "tittle":"Yellow.ai Certified Platform Associate",
+       "description":"Learned platform features, query handling, and integration knowledge for effective chatbot creation and management.",
+       "logo":"https://media.licdn.com/dms/image/D560BAQG2ZQfhH46cmw/company-logo_200_200/0/1682433539412?e=2147483647&v=beta&t=rBX7nkflzpo7MGifTSlQmJebh7t95Cs2FBNRAqJsDF0",
+       "certificate":"/Image/certified.webp"
+       
+    },
+    {
+       "tittle":"Platform Associate",
+       "description":"Course is all about the fundamentals of the yellow.ai conversational AI platform, including its features, capabilities, and benefits.",
+       "logo":"https://media.licdn.com/dms/image/D560BAQG2ZQfhH46cmw/company-logo_200_200/0/1682433539412?e=2147483647&v=beta&t=rBX7nkflzpo7MGifTSlQmJebh7t95Cs2FBNRAqJsDF0",
+       "certificate":"/Image/platformAssociate.webp"
+    },
+
+    {
+       "tittle":"Google Data Analytics Specialization",
+       "description":"Practice-based assessments and are designed to prepare them for introductory level roles in Data Analytics.",
+       "logo":"https://www.langoly.com/wp-content/uploads/2021/09/coursera-logo.png",
+       "certificate":"/Image/GoogleDA.webp"
+    },
+    {
+       "tittle":"Data Analysis with Python",
+       "description":"Here, I conducted a data analysis of student marks and answered several related questions through visualization.",
+       "logo":"https://www.langoly.com/wp-content/uploads/2021/09/coursera-logo.png",
+       "certificate":"/Image/python.webp"
+    },
+    {
+       "tittle":"Foundations: Data, Data, Everywhere",
+       "description":"Mastering Data Management: Essential Skills in Spreadsheet, Data Cleansing, Analysis, Visualization, and SQL.",
+       "logo":"https://www.langoly.com/wp-content/uploads/2021/09/coursera-logo.png",
+       "certificate":"/Image/foundation.webp"
+    },
+    {
+       "tittle":"Introduction to Data Analysis Using Excel",
+       "description":"I learned a variety of valuable skills through my experience with Lookup Table, Data Analysis, Microsoft Excel, and Pivot Table.",
+       "logo":"https://www.langoly.com/wp-content/uploads/2021/09/coursera-logo.png",
+       "certificate":"/Image/excel.webp"
+    },
+    {
+       "tittle":"Introduction to Data Analytics",
+       "description":"Process of analyzing data to extract insights. Data roles include Engineer, Analyst, Scientist, Business Analyst, and BI Analyst.",
+       "logo":"https://www.langoly.com/wp-content/uploads/2021/09/coursera-logo.png",
+       "certificate":"/Image/DA.webp"
+    },
+    {
+       "tittle":"Customer Analytics",
+       "description":"This course is related to the use of data to understand the composition, needs and satisfaction of the customer.",
+       "logo":"https://www.langoly.com/wp-content/uploads/2021/09/coursera-logo.png",
+       "certificate":"/Image/CustomerAnalytics.webp"
+    }
+ ]

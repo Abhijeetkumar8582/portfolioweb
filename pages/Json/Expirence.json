@@ -1,0 +1,43 @@
+[
+
+   {
+   "desginstion": "Conversational AI Developer",
+   "jobtype": "Druidai",
+   "jobRole":"I innovate co-polite AI solutions for businesses, advance LLM understanding to enhance conversational AI, and contribute to its evolution through research and implementation.",
+   "timeline": "March 2024 - Present",
+   "logo":"https://media.licdn.com/dms/image/D4D0BAQH6eszQwGdsJw/company-logo_200_200/0/1704295715881/druidai_logo?e=2147483647&v=beta&t=z4xTvpChIvYvNejifBCV2glYCiFnjHdGr3SdmZ_S3e8"
+},
+
+    
+    {
+        "desginstion": "Presales Engineer",
+        "jobtype": "Yellow.ai",
+        "jobRole":"I developed a JavaScript-based React application tailored to the client's needs and seamlessly incorporated an AI chatbot. I extended its functionality by integrating it with various communication channels, employing APIs to connect with other bots, and enhancing its capabilities through Generative AI and GPT-3.5, demonstrating prompt engineering..",
+        "timeline": "Dec 2021 - March 2024",
+        "logo":"https://media.licdn.com/dms/image/D560BAQG2ZQfhH46cmw/company-logo_200_200/0/1682433539412?e=2147483647&v=beta&t=rBX7nkflzpo7MGifTSlQmJebh7t95Cs2FBNRAqJsDF0"
+    }
+    ,
+    {
+        "desginstion":"Business Analyst (Internship) ",
+        "jobtype":"Yellow.ai",
+        "jobRole": "Proficient in evaluating information from diverse sources, reconciling conflicts, breaking down complex information into details, and adeptly understanding and resolving customer queries.",
+        "timeline":"Aug 2021 - Dec 2021",
+        "logo":"https://media.licdn.com/dms/image/D560BAQG2ZQfhH46cmw/company-logo_200_200/0/1682433539412?e=2147483647&v=beta&t=rBX7nkflzpo7MGifTSlQmJebh7t95Cs2FBNRAqJsDF0"
+     },
+     {
+        "desginstion":"Business Analyst (Internship) ",
+        "jobtype":"Bizlem PVT LTD",
+        "jobRole": "I had the responsibility of website maintenance, bug identification, resolution, and conducting market research to improve the user interface. I also generated reports for data analysis..",
+        "timeline":"Mar 2021 - Jun 2021",
+        "logo":"https://media.licdn.com/dms/image/C4E0BAQGoYAYth1YJCA/company-logo_200_200/0/1519874782761?e=2147483647&v=beta&t=u7gVPuH75i6s7xmbqRHNJeepo2c9QIDYaPYREwymNbQ"
+     },
+    
+     {
+        "desginstion":"Data Science & Business Analytics (Internship)",
+        "jobtype":"The Sparks Foundation ",
+        "jobRole": "I was assigned a task that involved analyzing a dataset using Python and basic Machine Learning techniques to predict a student's marks and interpret the resulting reports.",
+        "timeline":"Nov 2020 - Jan 2021",
+        "logo":"https://www.thesparksfoundationsingapore.org/images/logo_small.png"
+     }
+
+]

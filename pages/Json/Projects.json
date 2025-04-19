@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Brownmen",
+    "description": "I have developed an application using Node.js and MongoDB as the backend. I have built an admin panel from scratch to manage the application's data.",
+    "image": "/Image/Brownmen.webp",
+    "code": "React, Javascript, NodeJS",
+    "button": "https://brownmen.netlify.app/"
+  },
+  {
+    "title": "Future Project",
+    "description": "This project aimed to assess and familiarize ourselves with various UI tools and skills for potential future applications.",
+    "image": "/Image/shopifyImage.webp",
+    "code": "React, Javascript",
+    "button": "https://shopify45.netlify.app/"
+  },
+  {
+    "title": "OMNIPEXEL",
+    "description": "I built an image search web page from scratch using pixel APIs, incorporating an infinite scroll feature for a more seamless user experience.",
+    "image": "/Image/OmniPexelIm.webp",
+    "code": "React, Material UI, API ",
+    "button": "https://omnipexelproject.netlify.app/"
+  },
+  {
+    "title": "Shopping Website",
+    "description": "I built an image search web page from scratch using pixel APIs, incorporating an infinite scroll feature for a more seamless user experience.",
+    "image": "/Image/RTO_image.webp",
+    "code": "React, Material UI, API ",
+    "button": "https://rto-dev.netlify.app/"
+  },
+  {
+    "title": "NOWCAST",
+    "description": "I developed an application called NewApp that retrieves categories and news from APIs and updates them on a daily basis.",
+    "image": "/Image/newsAPP.webp",
+    "code": "React, Material UI, API ",
+    "button": "https://newsappjsxreact.netlify.app/"
+  },
+  {
+    "title": "CHARTEXT",
+    "description": "I designed a text conversion application that allows users to input their data and convert the cases according to their specific requirements.",
+    "image": "/Image/chartext.webp",
+    "code": "React, Javascript",
+    "button": "https://chartextreact.netlify.app/"
+  }
+]

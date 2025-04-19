@@ -1,0 +1,762 @@
+.Moblie_Navbar_Div {
+  display: none;
+}
+.Instragram_Main_Div {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+}
+.Instragram_Div_Side_NavBar {
+  width: 15%;
+  color: rgb(250, 250, 250);
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  border-right: 1px solid rgb(87, 87, 87);
+  display: flex;
+  flex-direction: row;
+  padding: 4rem 2rem;
+}
+.Instragram_Div_Side_NavBar_heading_title_div {
+  display: flex;
+  align-items: center;
+}
+.Instragram_Div_Side_NavBar_instagram_menu_Section_div {
+  display: flex;
+  align-items: center;
+}
+.LinkWithoutUnderline {
+  text-decoration: none;
+  color: white;
+}
+.Moblie_Navbar_Div_lock_fa_fa_icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.daredevil8582_text_div {
+  display: flex;
+  align-items: center;
+}
+.Crafted_text_div {
+  display: flex;
+  justify-content: center;
+  
+}
+.AboutmeLicenses_Main_div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.Instragram_Div_Side_NavBar_subHeading {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.Instragram_Div_Side_NavBar_instagram_icon {
+  display: none;
+}
+.Instragram_Div_Side_NavBar_subHeading_list {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.Instragram_Content_Main_div {
+  width: 85%;
+  padding: 2rem 4rem;
+  position: relative;
+  color: #ffffff;
+  overflow-x: scroll;
+}
+.Instragram_Content_Intro_section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.Instragram_Intro_section_image {
+  width: 30%;
+  padding: 0rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+.Instragram_Content_username_Section {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.edit_profile_button {
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  background-color: #232323;
+  color: white;
+  padding: 4px 15px;
+  font-size: 15px;
+}
+.edit_profile_button:focus {
+  text-decoration: none;
+  outline: none;
+}
+.fafaIcon {
+  font-size: 25px;
+}
+.Instragram_Div_Side_NavBar_heading_title {
+  font-weight: 400;
+  font-size: 18px;
+}
+.Instragram_Content_Post_Section {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.Instragram_Div_Side_NavBar_Menu_title {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.Instragram_Div_Side_NavBar_Menu_icon {
+  display: block;
+  font-size: 25px;
+}
+.Instragram_Content_Skills_div_container {
+  display: flex;
+  margin-bottom: 50px;
+}
+.Instragram_Content_Skills_div_arrow_left {
+  width: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.Instragram_Content_Skills_div {
+  display: flex;
+  gap: 32px;
+  width: 90%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  transition: transform 0.3s ease-in-out;
+}
+.Instragram_Content_Skills_avatar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 80px;
+}
+.prevbutton,
+.nextbutton {
+  background-color: transparent;
+  transition: transform 0.3s ease-in-out;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+}
+.Instragram_Content_Major_div {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid gray;
+  margin-bottom: 50px;
+  flex-direction: column;
+}
+.Instragram_Content_Major_div_item {
+  border: none;
+  color: gray;
+  outline: none;
+  border-bottom: none;
+}
+
+.Instragram_Content_Major_div_item:focus,
+.Instragram_Content_Major_div_item:active {
+  color: #ffffff;
+  border-bottom: none;
+  border-top: 1px solid white;
+  outline: none;
+}
+
+.Project_card {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.Project_card_item {
+  max-width: 300px;
+  gap: 10px;
+}
+.expirence_Product_card_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.expirence_card_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 20px;
+}
+.viewProject_btn {
+  font-family: monospace;
+  font-size: 16px;
+  color: #fafafa;
+  text-transform: uppercase;
+  padding: 4px 15px;
+  border-radius: 10px;
+  border: 1px solid #fafafa;
+  background: #252525;
+  box-shadow: 2px 2px #fafafa;
+  cursor: pointer;
+  margin: 25px 0;
+}
+
+.viewProject_btn:active,
+.viewProject_btn:focus {
+  box-shadow: none;
+  text-decoration: none;
+  outline: none;
+  transform: translate(3px, 3px);
+}
+
+.expirence_card {
+  padding: 20px;
+  width: 300px;
+  min-height: 370px;
+  border-radius: 20px;
+  background: #121212;
+  box-shadow: 2px 2px 4px #1b1b1b, -2px -2px 2px #272727;
+  transition: 0.4s;
+}
+
+.expirence_card:hover {
+  translate: 0 -10px;
+}
+
+.expirence_card_title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 15px 0 0 10px;
+}
+
+.expirence_card_image {
+  min-height: 140px;
+  background-color: #313131;
+  border-radius: 15px;
+  background: #313131;
+  box-shadow: inset 5px 5px 3px #2f2f2f, inset -5px -5px 3px #333333;
+}
+
+.expirence_card_body {
+  margin: 13px 0 0 10px;
+  color: rgb(184, 184, 184);
+  font-size: 15px;
+}
+
+.expirence_card_footer {
+  float: right;
+  margin: 28px 0 0 18px;
+  font-size: 13px;
+  color: #b3b3b3;
+}
+
+.by-name {
+  font-weight: 700;
+}
+
+.card {
+  min-width: 300px;
+  min-height: 280px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #1a1a1a;
+}
+.card:hover {
+  translate: 0 -10px;
+  transition: all ease-in 0.3s;
+}
+.header {
+  display: flex;
+  color: #ffffff;
+  justify-content: space-between;
+  grid-gap: 1rem;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 1.125rem;
+  color: #ffffff;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+
+.name {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: #b2b2b2;
+  line-height: 1rem;
+  font-weight: 500;
+}
+
+.image {
+  display: block;
+  flex-shrink: 0;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  background-color: royalblue;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: grey;
+}
+
+.AboutmeLicenses_div {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-shrink: 0;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.AboutmeLicenses_div_heading {
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  z-index: 0;
+}
+
+.AboutmeLicenses_div_description {
+  font-size: 0.9em;
+  color: rgb(138, 138, 138);
+  z-index: 0;
+}
+
+.AboutmeLicenses_div_description a {
+  color: #b2b2b2;
+}
+
+.AboutmeLicenses_div_button {
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  -webkit-clip-path: polygon(
+    0 0,
+    0 0,
+    100% 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 15px) 100%,
+    15px 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    0 0,
+    100% 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 15px) 100%,
+    15px 100%,
+    0 100%
+  );
+  height: 40px;
+  font-size: 0.7rem;
+  line-height: 14px;
+  letter-spacing: 1.2px;
+  transition: 0.2s 0.1s;
+  background-image: linear-gradient(90deg, #1c1c1c, #363638);
+  border: 0 solid;
+  overflow: hidden;
+}
+
+.AboutmeLicenses_div_button:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.DialogContent_box {
+  display: flex;
+}
+.DialogContent_box_image {
+  width: 50%;
+}
+.DialogContent_box_content {
+  width: 50%;
+  background-color: #121212;
+  color: #ffffff;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.DialogContent_box_Avatar_div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 1rem 0rem;
+  border-bottom: 1px solid gray;
+}
+.Setting_edit_profile_button {
+  display: flex;
+  align-items: center;
+}
+.mobileRenderBtn {
+  display: none;
+}
+.Instragram_Content_Post_Section_subdiv {
+  display: flex;
+  gap: 5px;
+}
+.daredevil8582_btn {
+  background-color: black;
+  color: white;
+  border: none;
+}
+.daredevil8582_btn:active,
+.daredevil8582_btn:focus {
+  outline: none;
+}
+.Crafted_text {
+  font-size: 16px;
+  color: gray;
+}
+@media only screen and (max-width: 1290px) {
+  .Instragram_Div_Side_NavBar {
+    width: 6%;
+    color: rgb(250, 250, 250);
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    border-right: 1px solid white;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+  }
+  .Instragram_Content_Skills_div {
+    justify-content: center;
+  }
+  .Instragram_Content_Main_div {
+    width: 94%;
+    padding: 2rem 4rem;
+
+    color: #ffffff;
+    overflow-x: scroll;
+  }
+  .Instragram_Div_Side_NavBar_heading_title {
+    display: none;
+  }
+
+  .Instragram_Div_Side_NavBar_subHeading_list:hover
+    .Instragram_Div_Side_NavBar_heading_title {
+    display: block;
+  }
+  .Instragram_Content_Intro_section {
+    justify-content: center;
+  }
+  .fafaIcon {
+    font-size: 25px;
+  }
+  .Instragram_Div_Side_NavBar_instagram_title {
+    display: none;
+  }
+  .Instragram_Div_Side_NavBar_instagram_icon {
+    display: block;
+    font-size: 25px;
+  }
+  .Instragram_Div_Side_NavBar_subHeading {
+    margin-top: 50px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .Instragram_Div_Side_NavBar_Menu_title {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+  }
+  .Instragram_Div_Side_NavBar_instagram_menu_Section {
+    display: none;
+  }
+  .Instragram_Div_Side_NavBar_Menu_icon {
+    display: block;
+    font-size: 25px;
+  }
+  .Instragram_Div_Side_NavBar_instagram_menu_Section {
+    display: none; /* Hide text by default */
+  }
+
+  .Instragram_Div_Side_NavBar_Menu_title:hover
+    .Instragram_Div_Side_NavBar_instagram_menu_Section {
+    display: block; /* Show text on hover */
+  }
+  .Crafted_text {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Instragram_Div_Side_NavBar {
+    display: none;
+  }
+  .Moblie_Navbar_Div {
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    margin-left: -10px;
+    background-color: #000000;
+    z-index: 1;
+  }
+  .Moblie_daredevil8582_text {
+    margin: 0px;
+    font-size: 16px;
+  }
+  .Instragram_Content_Main_div {
+    width: 100%;
+    color: #ffffff;
+    padding: 0px 10px;
+    overflow-x: scroll;
+  }
+  .expirence_card_list {
+    grid-template-columns: 1fr;
+  }
+  .Instragram_Content_Intro_section {
+    min-height: 220px;
+    margin-bottom: 0px;
+    position: relative;
+    margin-top: 50px;
+  }
+  .Instagram_status {
+    position: absolute;
+    left: 0;
+    margin-top: 25px;
+    margin-left: 10px;
+  }
+  .Instragram_Intro_section_image {
+    width: 10%;
+  }
+
+  .DialogContent_box {
+    flex-direction: column;
+  }
+  .DialogContent_box_image {
+    width: 100%;
+  }
+  .DialogContent_box_content {
+    width: 100%;
+    background-color: #121212;
+    color: #ffffff;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 20px;
+  }
+  .DialogContent_box_Avatar_div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid gray;
+  }
+  .mobile_text {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .edit_profile_button {
+    font-size: 14px;
+  }
+  .edit_profile_button {
+    display: none;
+  }
+  .abhijeetkumarText {
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+  }
+  .Instragram_Content_username_Section_Main_div {
+    width: 90%;
+    margin-left: 25px;
+  }
+  .mobileRenderBtn {
+    display: block;
+  }
+
+  .mobileRenderBtn {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .mobile_profile_button_div {
+    width: 50%;
+  }
+  .mobile_profile_button {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #232323;
+    color: white;
+    padding: 4px 15px;
+    font-size: 15px;
+  }
+  .mobile_profile_button:focus {
+    outline: none;
+  }
+  .Setting_edit_profile_button {
+    display: none;
+  }
+  .daredevil8582_text {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .edit_profile_button {
+    display: none;
+  }
+  .Instragram_Content_Intro_section {
+    margin-bottom: 20px;
+  }
+  .Setting_edit_profile_button {
+    display: none;
+  }
+  .Instragram_Content_Skills_div_arrow_left {
+    width: 5%;
+    display: flex;
+    align-items: center;
+  }
+  .Instragram_Content_Skills_div {
+    justify-content: center;
+  }
+  .prevbutton {
+    margin: 0px -10px;
+  }
+  .nextbutton {
+    margin: 0px -4px;
+  }
+  .Instragram_Content_Post_Section_subdiv {
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .Instragram_Content_Intro_section {
+    margin-bottom: 50px;
+  }
+  .Instragram_Intro_section_image {
+    margin-top: 20px;
+  }
+}
+
+
+.FooterBar_container {
+  display: flex;
+  margin-top: 40px;
+}
+.FooterBar_container_sectionOne_div_one {
+  width: 40%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.FooterBar_container_sectionOne_div_two {
+  width: 60%;
+  display: flex;
+  margin: 10px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.footer_font_text {
+  color: #ffffff;
+  font-family: monospace;
+  font-size: 16px;
+  margin: 0px 10px;
+  text-decoration: none;
+}
+.FooterBar_container_two {
+  background-color: #000000;
+  color: #ffffff;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+.footer_font_text_other_text {
+  color: #aaaaaa;
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 200;
+  margin: 0px;
+  text-decoration: none;
+}
+@media only screen and (max-width: 750px) {
+  .footer_font_text,
+  .footer_font_text_other_text {
+    font-size: 13px;
+    text-align: center;
+  }
+  .FooterBar_container{
+    flex-direction: column;
+  }
+  .FooterBar_container_sectionOne_div_two {
+    gap: 5px;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .FooterBar_container_sectionOne_div_one{
+    width: 100%;
+    margin:10px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  
+}
+
+.redirect_btn{
+    background: transparent;
+    border: none;
+}
