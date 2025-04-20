@@ -1,8 +1,12 @@
 import React from 'react'
 import Style from "/styles/Dynamic.module.css";
-import DynamicCard from './Dynamic_card';
-
+import {DynamicCard} from './Dynamic_card';
+import {ExpirenceCard} from './Dynamic_card';
+import Jarvis from './Jarvis';
 function Home() {
+    const handleClick = () => {
+        // Jarvis.activate();
+    }
   return (
     <div className={Style.MainDiv_Header_One}>
       <div className={Style.MainDiv_Header_One_Div}>
@@ -40,10 +44,22 @@ function Home() {
           <DynamicCard/>
         </div>
         <div className={Style.Jarvis_Div}>
-         <img src="/Image/Jarvis.gif" width={300} height={300} alt="Jarvis" />
-        </div>
+            <Jarvis/>
+          </div>
       </div>
       
+
+      <div className={Style.Timeline_Div}>
+        <div className={Style.Timeline_Div_One}>
+            <ExpirenceCard/>
+        </div>
+      </div>
+
+      <div className={Style.Skill_Div}>
+        <div className={Style.Skill_Div_One}>
+           <button onClick={handleClick()} className={Style.Skill_Button} disabled>Skills</button>
+        </div>
+      </div>
     </div>
   )
 }
