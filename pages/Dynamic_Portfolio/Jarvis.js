@@ -294,7 +294,7 @@ const callOpenAI = async (question) => {
         </div>
       </div>
       
-      <form onSubmit={handleSubmit} className={styles.questionForm}>
+      {/* <form onSubmit={handleSubmit} className={styles.questionForm}>
         <input
           type="text"
           value={userQuestion}
@@ -310,7 +310,7 @@ const callOpenAI = async (question) => {
         >
           {isProcessing ? 'Processing...' : 'Ask'}
         </button>
-      </form>
+      </form> */}
     </div>
   );
 };
