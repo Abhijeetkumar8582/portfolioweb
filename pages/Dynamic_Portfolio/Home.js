@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react';
-import Style from '/styles/Dynamic.module.css';
-import { DynamicCard, ExpirenceCard } from './Dynamic_card';
+import Style from '../../styles/Dynamic.module.css';
+import { DynamicCard, ExpirenceCard,Skillcard,Licensecard } from './Dynamic_card';
 import Jarvis from './Jarvis';
 // import AgenticAgent from './AgenticAgent';
 
@@ -80,31 +80,7 @@ useEffect(()=>{
         </div>
       </div>
 
-      {/* Skills & Jarvis + Cards */}
-      <div className={Style.Dynamic_Card_Jarvis_div}>
-        <div className={Style.Dynamic_Card}>
-          <DynamicCard />
-          <DynamicCard />
-          <DynamicCard />
-        </div>
-        <div className={Style.Jarvis_Div}>
-          <Jarvis />
-        </div>
-      </div>
-
-      {/* Experience Timeline */}
-      <div className={Style.Timeline_Div}>
-        <div className={Style.Timeline_Div_One}>
-          <ExpirenceCard />
-        </div>
-      </div>
-
-      {/* Trigger Skills Prompt */}
-      <div className={Style.Skill_Div}>
-        <div className={Style.Skill_Div_One}>
-          <button onClick={handleClick} className={Style.Skill_Button}>Skills</button>
-        </div>
-      </div>
+      <Jarvis/>
 
       {/* Optional input to speak custom text */}
       <div className={Style.TextDiv} style={{ marginTop: '20px' }}>
