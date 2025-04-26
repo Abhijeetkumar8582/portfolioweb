@@ -9,6 +9,7 @@ import { DynamicCard, ExpirenceCard, Skillcard, Licensecard } from './Dynamic_ca
 const Jarvis = () => {
   const jarvisRef = useRef(null);
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const [textData, setTextData] = useState("");
   const [cardData, setCardData] = useState([]);
   const [sdata, setdata] = useState("");
 useEffect(()=>{
@@ -134,7 +135,7 @@ useEffect(()=>{
           {
             role: "system",
             content: `You are an intelligent . Use the provided JSON data to answer the user's question accurately. Only return relevant  values from the dataset:\n\n${JSON.stringify(json_data)}. You should 
-            return the response in JSON format. Format is like {"SummaryText":"It should be a short story about me",cardType:"Selecte one text[AboutmeSkills,AboutmeLicenses,AboutmeProject,AboutmeExpirence]",cardData:${json_format}} dont change the format of cardData`
+            return the response in JSON format. Format is like {"SummaryText":"It should be a short story about me",cardType:"Selecte one text[AboutmeSkills,AboutmeLicenses,AboutmeProject,AboutmeExpirence]",cardData:${json_format}} dont change the format of cardData and cardData should be array of object`
           },
           {
             role: "user",
@@ -149,11 +150,7 @@ useEffect(()=>{
     const result = await response.json();
     console.log("json_format2", json_format, json_data);
   
-    // Process the card data
     
-    
-    // const cardDataResult = await cardDataResponse.json();
-    // console.log("json", cardDataResult.choices[0].message.content, typeof(cardDataResult.choices[0].message.content));
     
     try {
       console.log("result", result.choices[0].message.content);
@@ -246,6 +243,7 @@ Only return the relevant structured data.`
             console.log("parsedCardData", parsedCardData, typeof(parsedCardData));
             
             // Update the state with the parsed data
+            setTextData(parsedCardData.SummaryText);
             speak(parsedCardData.SummaryText);
             setCardData(parsedCardData.cardData);
             setdata(parsedCardData.cardType);
@@ -272,66 +270,29 @@ Only return the relevant structured data.`
   return (
     <div>
       <div className={Style.Dynamic_Card_Jarvis_div}>
+
         <div className={Style.Dynamic_Card}>
-        {sdata === "AboutmeProject" && cardData.map((item, index) => (
-                 <div style={{display:"flex",flexDirection:"row",gap:"10px",alignItems:"center",justifyContent:"center",flexWrap:"wrap"}}>
-                 <div className={Style.Dynamic_Card_one} draggable="true">
-                 <img src={item.image} alt="Project_Image" width="100%" height="120px" />
-                   <h5>{item.title}</h5>
-                   <p style={{fontSize:"12px",color:"#808080"}}>{item.description}</p>
-                   
-                   <h6 style={{fontSize:"12px",color:"#808080"}}>{item.code}</h6>
-                   <button onClick={() => window.open(item.button, '_blank')} style={{backgroundColor:"#000",color:"#fff",padding:"5px 10px",borderRadius:"5px",cursor:"pointer",fontSize:"12px"}}>View Project</button>
-                 </div>
-               </div>
+          <div><h6 style={{fontSize:"14px",color:"grey"}}>{textData}</h6></div>
+          <div style={{display:"flex",flexDirection:"row",gap:"20px",flexWrap:"wrap" , maxHeight:"400px",overflowY:"scroll"}}>
+          {sdata === "AboutmeProject" && cardData.map((item, index) => (
+                 <DynamicCard item={item} key={index} />
               ))}
               {sdata === "AboutmeSkills" && cardData.map((item, index) => (
-                <div className={Style.Skill_Div}>
-                <div className={Style.Skill_Div_One}>
-                <img src={item.logo} alt="Skill_Image" width="20px" height="20px" />
-                  <h6>{item.skills}</h6>
-                  {/* <img src={item.logo} alt="Skill_Image" width="20px" height="20px" /> */}
-                </div>
-              </div>
+                <Skillcard item={item} key={index} />
               ))}
               {sdata === "AboutmeLicenses" && cardData.map((item, index) => (
-                  <div className={Style.Timeline_Div}>
-                 <div className={Style.Timeline_Div_One}>
-                 <div className={Style.Expirence_Card}>
-        <div className={Style.Expirence_icon}>
-          <img src={item.logo} alt="Expirence_Image" width="50px" height="50px" />
-        </div>
-        <div className={Style.Expirence_content}>
-          <span className={Style.Expirence_title}>{item.tittle}</span>
-          <div className={Style.Expirence_desc}>{item.description}</div>
-          <div className={Style.Expirence_actions}>
-            <img src={item.certificate} alt="Expirence_Image" width="20px" height="20px" />
-          </div>
-        </div>
-      </div>
-                 </div>
-               </div>
+                 <Licensecard item={item} key={index} />
               ))} 
               {sdata === "AboutmeExpirence" && cardData.map((item, index) => (
-                <div className={Style.Expirence_Card}>
-                <div className={Style.Expirence_icon}>
-                  <img src={item.logo} alt="Expirence_Image" width="20px" height="20px" />
-                </div>
-                <div className={Style.Expirence_content}>
-                  <span className={Style.Expirence_title}>{item.desginstion} - {item.jobtype}</span>
-                  <div className={Style.Expirence_desc}>{item.jobRole}</div>
-                  <div className={Style.Expirence_desc}>{item.timeline}</div>
-                  <div className={Style.Expirence_actions}>
-                  </div>
-                </div>
-              </div>
+                <ExpirenceCard item={item} key={index} />
               ))}
-
+</div>
         </div>
         <div className={Style.Jarvis_Div}>
           <div className={Style.jarvisContainer}>
             <div className={Style.jarvisCore} ref={jarvisRef} id="jarvis">
               <div className={Style.waveform}>
+
                 <div className={Style.bar} style={{ animationDelay: '0s' }}></div>
                 <div className={Style.bar} style={{ animationDelay: '0.1s' }}></div>
                 <div className={Style.bar} style={{ animationDelay: '0.2s' }}></div>
@@ -345,6 +306,7 @@ Only return the relevant structured data.`
           </div>
         </div>
       </div>
+      
     </div>
   );
 };

@@ -1,23 +1,35 @@
 import React, { useState,useEffect } from 'react';
 import Style from '../../styles/Dynamic.module.css';
-import { DynamicCard, ExpirenceCard,Skillcard,Licensecard } from './Dynamic_card';
+import { DynamicCard,ProjectCardMainCard,MainCard, ExpirenceCard,Skillcard,Licensecard } from './Dynamic_card';
 import Jarvis from './Jarvis';
+import AboutmeProject from "../Json/Projects.json";
+import AboutmeExpirence from "../Json/Expirence.json";
+import AboutmeSkills from "../Json/AboutmeSkills.json";
 // import AgenticAgent from './AgenticAgent';
-
-
-
-
 
 function Home() {
   const [inputText, setInputText] = useState('');
+  const [responseData, setResponseData] = useState(null);
 
   // When text input changes
   const handleInputChange = (e) => {
     setInputText(e.target.value);
   };
-useEffect(()=>{
 
-}, []);
+  useEffect(() => {
+    // Listen for response data from Jarvis
+    const handleResponse = (event) => {
+      if (event.detail?.response) {
+        setResponseData(event.detail.response);
+      }
+    };
+
+    document.addEventListener('jarvisResponse', handleResponse);
+    return () => {
+      document.removeEventListener('jarvisResponse', handleResponse);
+    };
+  }, []);
+
   // When user sends message to Jarvis
   const handleSendToJarvis = () => {
     if (inputText.trim()) {
@@ -42,11 +54,6 @@ useEffect(()=>{
     });
     document.dispatchEvent(event);
   };
-
-  
-
-
-  
 
   return (
     <div className={Style.MainDiv_Header_One}>
@@ -79,22 +86,68 @@ useEffect(()=>{
         </div>
         </div>
       </div>
-
+      <div className={Style.parent_main_div}>
+        {/* <div className={Style} style={{ marginTop: '20px' }}> */}
+          <div className={Style.child_div_one}>{AboutmeExpirence.slice(0,1).map((item,index)=>(
+            <MainCard item={item} key={index} style={{width:"600px"}} />
+          ))}</div>
+          <div style={{display:"flex",flexDirection:"row",gap:"20px"}}>
+          <div className={Style.child_div_two}>
+          {AboutmeProject.slice(0,2).map((item,index)=>(
+            <ProjectCardMainCard item={item} key={index} />
+          ))}
+          </div>
+          <div className={Style.child_div_three}>
+          {AboutmeSkills.map((item,index)=>(
+            <Skillcard item={item} key={index} />
+          ))}
+          </div>
+          </div>
+        {/* </div> */}
+      </div>
       <Jarvis/>
+
+      {/* Response Display Area */}
+      {responseData && (
+        <div className={Style.responseContainer}>
+          <div className={Style.responseText}>
+            {responseData.SummaryText}
+          </div>
+          {responseData.cardData && responseData.cardData.length > 0 && (
+            <div className={Style.cardContainer}>
+              {responseData.cardType === 'AboutmeSkills' && (
+                <Skillcard data={responseData.cardData} />
+              )}
+              {responseData.cardType === 'AboutmeLicenses' && (
+                <Licensecard data={responseData.cardData} />
+              )}
+              {responseData.cardType === 'AboutmeProject' && (
+                <DynamicCard data={responseData.cardData} />
+              )}
+              {responseData.cardType === 'AboutmeExpirence' && (
+                <ExpirenceCard data={responseData.cardData} />
+              )}
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Optional input to speak custom text */}
       <div className={Style.TextDiv} style={{ marginTop: '20px' }}>
         <input
           type="text"
+          className={Style.Input_Box}
           value={inputText}
           onChange={handleInputChange}
           placeholder="Type something for Jarvis..."
-          className={Style.Input_Box}
+          // className={Style.Input_Box}
         />
-        <button onClick={handleSendToJarvis} className={Style.Skill_Button}>
+        <button onClick={handleSendToJarvis} className={Style.text_input_btn}>
           Send to Jarvis
         </button>
       </div>
+
+      
     </div>
   );
 }

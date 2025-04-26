@@ -99,23 +99,38 @@
     height: auto;
     resize: vertical;
 }
-  
+.Input_Box{
+  width: 60vw;
+  background-color: #101628;
+  height: 50px;
+  color: #FFFFFF;
+  border: 1px solid #44475a;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.Input_Box:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79,70,229,0.4);
+}
+
 .input:active {
     box-shadow: 2px 2px 15px #8707ff inset;
 }
 .Dynamic_Card_Jarvis_div{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     gap: 20px;
     width: 100%;
-    
 }
 
 .Dynamic_Card{
     display: flex;
     flex-direction: row;
-    overflow-y: scroll;
-    height: 400px;
+    /* overflow-y: auto; */
+    height: 500px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -128,7 +143,27 @@
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
+.parent_main_div{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.child_div_one{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.child_div_two{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 
+}
+.child_div_three{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;  
+}
 .Jarvis_Div{
     display: flex;
     flex-direction: column;
@@ -142,8 +177,8 @@
     background: linear-gradient(145deg, #0c1120, #0f1628);
     border-radius: 10px;
     padding: 20px;
-    width: 250px;
-    height: 350px;
+    width: 220px;
+    height: 330px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(152, 40, 231, 0.2);
@@ -169,7 +204,37 @@
     color: #ccc;
     margin-bottom: 0;
 }
+.Dynamic_Card_one_main_card {
+  background: linear-gradient(145deg, #0c1120, #0f1628);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  height: 330px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(152, 40, 231, 0.2);
+  transition: all 0.3s ease;
+}
 
+.Dynamic_Card_one_main_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(152, 40, 231, 0.3);
+}
+
+.Dynamic_Card_one_main_card h3 {
+  color: #fff;
+  margin-top: 0;
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #9828e7, #e06073);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.Dynamic_Card_one_main_card p {
+  color: #ccc;
+  margin-bottom: 0;
+}
 .card {
     width: 190px;
     height: 254px;
@@ -185,7 +250,7 @@
     height: 150px;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    gap: 20px;
     border-radius: 0.5rem;
     background: #606c88;
     background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);
@@ -194,7 +259,20 @@
     color: rgb(107, 114, 128);
     box-shadow: 0px 87px 78px -39px rgba(0,0,0,0.4);
   }
-  
+  .Expirence_Card_Main_card {
+    width:60%;
+    height: 150px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    border-radius: 0.5rem;
+    background: #606c88;
+    background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);
+    background: linear-gradient(to right top, #3f4c6b, #606c88);
+    padding: 1rem;
+    color: rgb(107, 114, 128);
+    box-shadow: 0px 87px 78px -39px rgba(0,0,0,0.4);
+  }
   .Expirence_icon {
     height: 2rem;
     width: 2rem;
@@ -240,9 +318,19 @@
     background: linear-gradient(to right, #6c55f1, #2a2adb);
     color: rgb(255 255 255);
     border: none;
+    width: 100px;
     padding: 5px 20px;
     border-radius: 5px;
     /* cursor: pointer; */
+ }
+ .text_input_btn{
+  background: linear-gradient(to right, #6c55f1, #2a2adb);
+    color: rgb(255 255 255);
+    border: none;
+    width: 150px;
+    height: 50px;
+    padding: 5px 20px;
+    border-radius: 5px;
  }
 /* -------------------------------- ------------------------------------------------------- */
 /* Jarvis Component Styles */
@@ -440,6 +528,12 @@
 .TextDiv{
   position: fixed;
   bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  
   left: 50%;
   transform: translateX(-50%);
 }
@@ -509,3 +603,26 @@
   align-items: center;
   justify-content: center;
 }
+
+.responseContainer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.responseText {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
