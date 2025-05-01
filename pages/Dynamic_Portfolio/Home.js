@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import Style from '../../styles/Dynamic.module.css';
-import { DynamicCard,ProjectCardMainCard,MainCard, ExpirenceCard,Skillcard,Licensecard } from './Dynamic_card';
+import { DynamicCard,LoadingDivMainCard,SkillcardMainCard,ProjectCardMainCard,MainCard, ExpirenceCard,Skillcard,Licensecard } from './Dynamic_card';
 import Jarvis from './Jarvis';
 import AboutmeProject from "../Json/Projects.json";
 import AboutmeExpirence from "../Json/Expirence.json";
@@ -86,26 +86,8 @@ function Home() {
         </div>
         </div>
       </div>
-      <div className={Style.parent_main_div}>
-        {/* <div className={Style} style={{ marginTop: '20px' }}> */}
-          <div className={Style.child_div_one}>{AboutmeExpirence.slice(0,1).map((item,index)=>(
-            <MainCard item={item} key={index} style={{width:"600px"}} />
-          ))}</div>
-          <div style={{display:"flex",flexDirection:"row",gap:"20px"}}>
-          <div className={Style.child_div_two}>
-          {AboutmeProject.slice(0,2).map((item,index)=>(
-            <ProjectCardMainCard item={item} key={index} />
-          ))}
-          </div>
-          <div className={Style.child_div_three}>
-          {AboutmeSkills.map((item,index)=>(
-            <Skillcard item={item} key={index} />
-          ))}
-          </div>
-          </div>
-        {/* </div> */}
-      </div>
-      <Jarvis/>
+      {/* <LoadingDivMainCard/> */}
+      <Jarvis />
 
       {/* Response Display Area */}
       {responseData && (

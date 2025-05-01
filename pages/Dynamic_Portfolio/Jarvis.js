@@ -4,18 +4,18 @@ import AboutmeSkills from "../Json/AboutmeSkills.json";
 import AboutmeLicenses from "../Json/AboutmeLicenses.json";
 import AboutmeProject from "../Json/Projects.json";
 import AboutmeExpirence from "../Json/Expirence.json";
-import { DynamicCard, ExpirenceCard, Skillcard, Licensecard } from './Dynamic_card';
+import { DynamicCard,LoadingDivMainCard,SkillcardMainCard,ProjectCardMainCard,MainCard, ExpirenceCard,Skillcard,Licensecard } from './Dynamic_card';
 
 const Jarvis = () => {
   const jarvisRef = useRef(null);
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const[isLoading,setIsLoading] = useState(false);
   const [textData, setTextData] = useState("");
+  const [maindiv,setMaindiv] = useState(true);
   const [cardData, setCardData] = useState([]);
   const [sdata, setdata] = useState("");
-useEffect(()=>{
-  console.log("cardData", cardData);
-},[cardData]);
-  // Voice speech
+  const [loadingText, setLoadingText] = useState("");
+
   const speak = (text) => {
     if (window.speechSynthesis) {
       window.speechSynthesis.cancel();
@@ -23,6 +23,7 @@ useEffect(()=>{
 
       utterance.onstart = () => {
         setIsSpeaking(true);
+        setMaindiv(false);
         jarvisRef.current?.classList.add(Style.speaking);
       };
 
@@ -41,11 +42,23 @@ useEffect(()=>{
       console.error('Speech synthesis not supported');
     }
   };
-
-  // Event listener for external calls
+  const funnyLoadingTexts = [
+    "🧠 Please wait… I need to resharpen my memory!",
+    "🤖 Just teaching my circuits how to multitask… almost done!",
+    "🕵️‍♂️ Digging through the archives like a digital detective…",
+    "🥲 Loading… because even AI needs a coffee break sometimes!",
+    "💡 Thinking really hard… sparks may fly!",
+    "📚 Flipping through my imaginary notebook…",
+    "🐢 I'm not slow, I'm just dramatically loading.",
+    "⚙️ Calibrating intelligence... it’s a delicate art!",
+    "⏳ Almost there... just arguing with my inner thoughts!",
+    "🛠️ Assembling thoughts with love and a few bugs!"
+  ];
   useEffect(() => {
     const handleSpeakEvent = (event) => {
       if (event.detail?.text) {
+        setIsLoading(true);
+        setLoadingText(funnyLoadingTexts[Math.floor(Math.random() * funnyLoadingTexts.length)]);
         callOpenAI(event.detail.text);
         setCardData([]);
         setdata("");
@@ -54,16 +67,13 @@ useEffect(()=>{
 
     document.addEventListener('jarvisSpeak', handleSpeakEvent);
 
-    setTimeout(() => {
-      speak('Jarvis is ready');
-    }, 1000);
-
     return () => {
       document.removeEventListener('jarvisSpeak', handleSpeakEvent);
     };
-  }, []);
+  }, [cardData]);
 
 
+  
   // JSON selector logic
   const get_datafunction = async (question, jsonName) => {
     let json_data = "";
@@ -121,7 +131,6 @@ useEffect(()=>{
       default:
         throw new Error("Invalid JSON name");
     }
-    console.log("json_format", json_format, json_data);
 
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
@@ -148,8 +157,6 @@ useEffect(()=>{
     });
 
     const result = await response.json();
-    console.log("json_format2", json_format, json_data);
-  
     
     
     try {
@@ -165,8 +172,8 @@ useEffect(()=>{
     }
   };
 
-  // Main logic handler
   const callOpenAI = async (question) => {
+    
     const tools = [
       {
         type: "function",
@@ -235,34 +242,39 @@ Only return the relevant structured data.`
 
           if (responseContent) {
             try {
-             
+              const parsedCardData = JSON.parse(responseContent);
+              console.log("parsedCardData", parsedCardData, typeof(parsedCardData));
+              
+              // Update the state with the parsed data
+              setTextData(parsedCardData.SummaryText);
+              speak(parsedCardData.SummaryText);
+              setCardData(parsedCardData.cardData);
+              setdata(parsedCardData.cardType);
+              setIsLoading(false);
+              console.log("responseContent", responseContent);
+              return responseContent;
             } catch (e) {
+              console.error("Error parsing response:", e);
+              setIsLoading(false);
+              return null;
             }
-
-            const parsedCardData = JSON.parse(responseContent);
-            console.log("parsedCardData", parsedCardData, typeof(parsedCardData));
-            
-            // Update the state with the parsed data
-            setTextData(parsedCardData.SummaryText);
-            speak(parsedCardData.SummaryText);
-            setCardData(parsedCardData.cardData);
-            setdata(parsedCardData.cardType);
-            console.log("responseContent", responseContent);
-            return responseContent;
           }
         }
 
         if (message.content) {
           speak(message.content);
+          setIsLoading(false);
           return message.content;
         }
       }
 
       speak("Sorry, I couldn't find an answer.");
+      setIsLoading(false);
       return null;
     } catch (error) {
       console.error("OpenAI call failed:", error);
       speak("An error occurred while processing your request.");
+      setIsLoading(false);
       return null;
     }
   };
@@ -270,24 +282,96 @@ Only return the relevant structured data.`
   return (
     <div>
       <div className={Style.Dynamic_Card_Jarvis_div}>
-
-        <div className={Style.Dynamic_Card}>
-          <div><h6 style={{fontSize:"14px",color:"grey"}}>{textData}</h6></div>
-          <div style={{display:"flex",flexDirection:"row",gap:"20px",flexWrap:"wrap" , maxHeight:"400px",overflowY:"scroll"}}>
-          {sdata === "AboutmeProject" && cardData.map((item, index) => (
-                 <DynamicCard item={item} key={index} />
-              ))}
-              {sdata === "AboutmeSkills" && cardData.map((item, index) => (
-                <Skillcard item={item} key={index} />
-              ))}
-              {sdata === "AboutmeLicenses" && cardData.map((item, index) => (
-                 <Licensecard item={item} key={index} />
-              ))} 
-              {sdata === "AboutmeExpirence" && cardData.map((item, index) => (
-                <ExpirenceCard item={item} key={index} />
-              ))}
-</div>
+      {
+  maindiv
+    ? (
+      <div className={Style.Dynamic_Card}>
+        {isLoading ? (
+          <div>
+          <div>
+          <h6 style={{ fontSize: "16px", color: "grey" }}>{loadingText}</h6>
         </div>
+          <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+          {Array(3).fill().map((_, index) => (
+            <LoadingDivMainCard key={index} />
+          ))}
+        </div>
+          </div>
+        ) : (
+      <div className={Style.parent_main_div}>
+        <div className={Style.child_div_one}>
+          {AboutmeExpirence.slice(0, 1).map((item, index) => (
+            <MainCard item={item} key={index} style={{ width: "600px" }} />
+          ))}
+        </div>
+        <div style={{ display: "flex", flexDirection: "row", gap: "20px" }}>
+          <div className={Style.child_div_two}>
+            {AboutmeProject.slice(0, 2).map((item, index) => (
+              <ProjectCardMainCard item={item} key={index} />
+            ))}
+          </div>
+          <div className={Style.child_div_three}>
+            {AboutmeSkills.map((item, index) => (
+              <SkillcardMainCard item={item} key={index} />
+            ))}
+          </div>
+        </div>
+      </div>)}
+      </div>
+    )
+    : (
+      <div className={Style.Dynamic_Card}>
+        {isLoading ? (
+          <div>
+          <div>
+          <h6 style={{ fontSize: "16px", color: "grey" }}>{loadingText}</h6>
+        </div>
+          <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
+          {Array(3).fill().map((_, index) => (
+            <LoadingDivMainCard key={index} />
+          ))}
+        </div>
+          </div>
+        ) : (
+          <div>
+            <div>
+              <h6 style={{ fontSize: "16px", color: "grey" }}>{textData}</h6>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                gap: "20px",
+                flexWrap: "wrap",
+                maxHeight: "400px",
+                overflowY: "scroll",
+              }}
+            >
+              {sdata === "AboutmeProject" &&
+                cardData.map((item, index) => (
+                  <DynamicCard item={item} key={index} />
+                ))}
+              {sdata === "AboutmeSkills" &&
+                cardData.map((item, index) => (
+                  <Skillcard item={item} key={index} />
+                ))}
+              {sdata === "AboutmeLicenses" &&
+                cardData.map((item, index) => (
+                  <Licensecard item={item} key={index} />
+                ))}
+              {sdata === "AboutmeExpirence" &&
+                cardData.map((item, index) => (
+                  <ExpirenceCard item={item} key={index} />
+                ))}
+            </div>
+          </div>
+        )}
+      </div>
+    )
+    
+}
+
+        
         <div className={Style.Jarvis_Div}>
           <div className={Style.jarvisContainer}>
             <div className={Style.jarvisCore} ref={jarvisRef} id="jarvis">

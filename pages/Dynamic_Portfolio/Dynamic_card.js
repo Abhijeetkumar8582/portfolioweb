@@ -45,7 +45,7 @@ export function Skillcard({ item, index }) {
   return (
     <div className={Style.Skill_Div}>
       <div className={Style.Skill_Div_One}>
-        <img src={item.logo} alt="Skill_Image" width="20px" height="20px" />
+        <img src={item.logo} alt="Skill_Image" width="50px" height="50px" />
         <h6>{item.skills}</h6>
         {/* <img src={item.logo} alt="Skill_Image" width="20px" height="20px" /> */}
       </div>
@@ -145,5 +145,33 @@ export function ProjectCardMainCard({ item, index }) {
         <button onClick={() => window.open(item.button, '_blank')} style={{ backgroundColor: "#000", color: "#fff", padding: "5px 10px", borderRadius: "5px", cursor: "pointer", fontSize: "12px" }}>View Project</button>
       </div>
     </div>
+  )
+}
+
+export function SkillcardMainCard({ item, index }) {
+  return (
+    <div className={Style.Skill_Div_Main_card}>
+      <div className={Style.Skill_Div_One_Main_card}>
+        <img src={item.logo} alt="Skill_Image" width="20px" height="20px" />
+        <h6 style={{color:"white"}}>{item.skills}</h6>
+      
+      </div>
+    </div>
+  )
+}
+
+export function LoadingDivMainCard({ item, index }) {
+  return (
+
+    <div className={Style.LoadingDivcards}>
+  <div className={`${Style.LoadingDivcard} ${Style.isLoading}`}>
+    <div className={Style.LoadingDivimage}></div>
+    <div className={Style.LoadingDivcontent}>
+      <h2></h2>
+      <p></p>
+    </div>
+  </div>
+</div>
+ 
   )
 }

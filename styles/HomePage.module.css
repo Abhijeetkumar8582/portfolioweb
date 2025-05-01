@@ -51,12 +51,12 @@
 .Container_two_subdiv {
   justify-content: center;
   display: flex;
-  min-height: 350px;
+  min-height: 320px;
   background: oldlace;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px;
   flex-direction: column;
-  max-width: 350px;
+  max-width: 300px;
   /* margin: 4rem; */
 }
 
